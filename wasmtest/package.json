@@ -1,0 +1,23 @@
+{
+    "name": "tiny-layout-engine-test",
+    "version": "1.0.0",
+    "description": "WASM test for the tiny layout engine.",
+    "scripts": {
+        "test": "webpack serve --open --config webpack.config.js",
+        "build": "webpack --config webpack.config.js"
+    },
+    "author": "Reuben Carter",
+    "devDependencies": {
+        "@babel/core": "^7.17.8",
+        "@babel/preset-env": "^7.16.11",
+        "@babylonjs/core": "^7.17.2",
+        "@babylonjs/loaders": "^7.17.2",
+        "babel-loader": "^8.2.4",
+        "cpy-cli": "^4.1.0",
+        "del-cli": "^4.0.1",
+        "html-webpack-plugin": "^5.5.0",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4"
+    }
+}
