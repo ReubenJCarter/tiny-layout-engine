@@ -16,6 +16,7 @@ echo "Compiling C++ project..."
 #get all cpp files in src folder 
 srcFiles=(\
 ./src/tinyLayoutEngine.cpp \
+./src/tinyLayoutEngineWasm.cpp \
 )
 
 #make obj build dir if it doesnt exist

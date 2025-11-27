@@ -154,23 +154,14 @@ public:
 //This is the interface that the layout engine uses to measure text and the like. It must be provided. 
 class BaseMeasurementContext {
 public:
+
+    virtual ~BaseMeasurementContext() = default; // add this
+
     // Measure the width of the given text with the given font properties
     virtual int16_t measureTextWidth(std::string& str, uint8_t font) = 0;
 
     //Gets the standard line height of a font, this is (ascent + descent * lineSpacing)
     virtual int16_t getLineHeight(int16_t lineSpacing, uint8_t font) = 0;
-};
-
-//
-class BaseDrawingContext {
-public:
-
-    virtual void drawRect(int16_t x, int16_t y, int16_t w, int16_t h, Color color) = 0;
-    virtual void drawRoundedRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, Color color) = 0;
-    virtual void fillRect(int16_t x, int16_t y, int16_t w, int16_t h, Color color) = 0;
-    virtual void fillRoundedRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, Color color) = 0;
-    virtual void drawText(int16_t x, int16_t y, std::string& str, uint8_t font, Color color) = 0;
-    
 };
 
 
